@@ -1,0 +1,18 @@
+{% extends './layouts/base.html' %}
+{% block TITTLE %}
+  Portafolio
+{% endblock %}
+{% block CONTENIDO %}
+  <h1>Portafolio</h1>
+
+  <div class="portafolio-content">
+    <ul>
+      {% for imagen in imagenes %}
+        <li>
+          <img src="https://picsum.photos/id/{{ imagen.id }}/200" alt="" srcset="" />
+          <p>by: Carlos Galiano</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

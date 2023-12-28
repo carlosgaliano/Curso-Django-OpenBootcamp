@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block TITTLE %}{% endblock TITTLE %}
+    </title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    {% block CSS %}{% endblock CSS %}
+</head>
+<body>
+    <header>
+        {% include './parciales/menu.html' %}
+    </header>
+    <main>
+        {% block CONTENIDO %}{% endblock CONTENIDO %}
+    </main>
+    {% include './parciales/footer.html' %}
+    {% block SCRIPTS %}{% endblock SCRIPTS %}
+</body>
+</html>
