@@ -1,4 +1,4 @@
 # Curso Django - OpenBootcamp
 **URL:** https://www.youtube.com/@OpenBootcamp
 
-*by Carlos galiano 2023*
+*by Carlos galiano diciembre 2023*
